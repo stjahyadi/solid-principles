@@ -1,14 +1,13 @@
 package com.eteration.dp.solid.ls.good;
 
-public class Square extends Rectangle{
-	
-	
-    public Square(double side) {
-		super(side, side);
+public class Square implements Shape {
+	private double side;
+
+	public Square(double side) {
+		this.side = side;
 	}
 	
-	
-	
-	
-
+	public double area() {
+		return side * side;
+	}
 }
